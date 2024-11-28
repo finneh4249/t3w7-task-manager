@@ -20,7 +20,7 @@ const AddTask = () => {
 
         setTasks([...tasks, newTask]);
         navigate('/tasks');
-    }
+    };
 
     return (
         <div>
@@ -40,6 +40,4 @@ const AddTask = () => {
     );
 }
     
-    
-
 export default AddTask;
