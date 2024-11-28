@@ -8,3 +8,5 @@ Routes:
 
 - Toggle method of edit/delete
 - Infinite Scrolling
+
+- Packages being used: react-router-dom and react-use
