@@ -4,12 +4,7 @@ import { useLocalStorage } from 'react-use'
 import { useTasks } from '../contexts/TaskContext'
 
 const Tasks = () => {
-  const [tasks, setTasks] = useLocalStorage('tasks', [])
-
-  const deleteTask = (id) => {
-    const updatedTasks = tasks.filter((task) => task.id !== id)
-    setTasks(updatedTasks)
-  }
+  const { tasks, deleteTask} = useTasks()
 
   return (
     <div>
@@ -30,6 +25,7 @@ const Tasks = () => {
                           </div>
                         </li>)
                       )}
+                      <button><Link to='/add-task'>Add Task</Link></button>
                     </ul>
                     )
             }
